@@ -22,7 +22,7 @@ Varyings vert(Attributes i)
 {
     Varyings o;
                 
-    VertexPositionInputs vertexPositions = GetVertexPositionInputs(i.positionOS);
+    VertexPositionInputs vertexPositions = GetVertexPositionInputs(i.positionOS.xyz);
     o.positionCS = vertexPositions.positionCS;
 
 
